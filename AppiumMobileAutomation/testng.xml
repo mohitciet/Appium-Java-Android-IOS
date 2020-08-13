@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Appium Mobile Automation" thread-count="1" parallel="tests">
+	<test name="Pixel_2">
+		<listeners>
+			<listener class-name="com.qa.mobile.listeners.TestListener" />
+		</listeners>
+		<parameter name="emulator" value="true" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="udid" value="emulator-5554" />
+		<parameter name="deviceName" value="Pixel_2" />
+		<parameter name="systemPort" value="10000" />
+		<parameter name="chromeDriverPort" value="11000" />
+		<classes>
+			<class name="com.qa.mobile.testcases.LoginTests"></class>
+		</classes>
+	</test>
+	
+	
+<!-- 	<test name="Copy_of_Pixel_2"> -->
+<!-- 		<listeners> -->
+<!-- 			<listener class-name="com.qa.mobile.listeners.TestListener" /> -->
+<!-- 		</listeners> -->
+<!-- 		<parameter name="emulator" value="true" /> -->
+<!-- 		<parameter name="platformName" value="Android" /> -->
+<!-- 		<parameter name="udid" value="emulator-5556" /> -->
+<!-- 		<parameter name="deviceName" value="Copy_of_Pixel_2" /> -->
+<!-- 		<parameter name="systemPort" value="10001" /> -->
+<!-- 		<parameter name="chromeDriverPort" value="11001" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qa.mobile.testcases.LoginTests"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+	
+	
+
+</suite> <!-- Suite -->

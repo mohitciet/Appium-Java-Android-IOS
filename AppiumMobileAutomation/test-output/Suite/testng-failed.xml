@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.mobile.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Pixel_3(failed)" parallel="tests">
+    <parameter name="emulator" value="true"/>
+    <parameter name="chromeDriverPort" value="11001"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="emulator-5556"/>
+    <parameter name="deviceName" value="Copy_of_Pixel_2"/>
+    <parameter name="systemPort" value="10001"/>
+    <classes>
+      <class name="com.qa.mobile.testcases.LoginTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="invalidUserName"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.qa.mobile.testcases.LoginTests -->
+    </classes>
+  </test> <!-- Pixel_3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

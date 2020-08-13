@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Appium Mobile Automation]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.mobile.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" name="Pixel_2(failed)" parallel="tests">
+    <parameter name="emulator" value="true"/>
+    <parameter name="chromeDriverPort" value="11000"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="deviceName" value="Pixel_2"/>
+    <parameter name="systemPort" value="10000"/>
+    <classes>
+      <class name="com.qa.mobile.testcases.LoginTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="invalidUserName"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.qa.mobile.testcases.LoginTests -->
+    </classes>
+  </test> <!-- Pixel_2(failed) -->
+</suite> <!-- Failed suite [Appium Mobile Automation] -->
